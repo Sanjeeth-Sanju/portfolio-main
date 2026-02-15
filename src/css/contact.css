@@ -1,0 +1,140 @@
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 60px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+
+.contact-title {
+  font-size: 40px;
+  margin-bottom: 25px;
+  font-family: "Numans", sans-serif;
+  color: #1F2937;
+}
+
+.contact-text {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #4B5563;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 65%
+}
+
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.contact-link {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #D63384;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link:hover {
+  color: #1F2937;
+}
+
+.link-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+.mail{
+  color: black;
+}
+.in{
+  color: black;
+}
+.git{
+  color: black;
+}
+.download{
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    padding: 50px 30px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 853px) {
+  .contact {
+    padding: 40px 20px;
+    width: 92%;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .contact {
+    padding: 32px 17px;
+    width: 85%;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .contact-text {
+    font-size: 14px;
+  }
+  .contact-link {
+  font-size: 13px;
+}
+
+.link-icon {
+  font-size: 14px;
+}
+    .contact-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    padding: 30px 15px;
+  }
+
+  .contact-title {
+    font-size: 26px;
+  }
+
+  .contact-text {
+    font-size: 13px;
+  }
+
+  .contact-links {
+    gap: 25px;
+  }
+  .contact-link {
+  font-size: 12px;
+}
+
+.link-icon {
+  font-size: 13px;
+}
+}

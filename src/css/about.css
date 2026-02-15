@@ -1,0 +1,218 @@
+
+.about {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 60px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.about-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Numans", sans-serif;
+  color: #1F2937;
+}
+
+.about-text {
+    text-align: left;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4B5563;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.edu {
+  margin-top: 60px;
+}
+
+.edu-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Numans", sans-serif;
+  color: #D63384;
+  text-align: center;
+}
+
+.card {
+  background: #FDEDEE;
+  padding: 25px 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(214, 51, 132, 0.2);
+}
+
+
+.subCard {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 10px;
+  gap: 7px;
+}
+
+.subCard h4 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #1F2937;
+}
+
+.card h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6B7280;
+  margin-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card p {
+  font-size: 15px;
+  color: #374151;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding: 40px 30px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-text {
+    font-size: 17px;
+  }
+    .subCard h4 {
+    font-size: 17px;
+  }
+
+  .card h5 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 853px) {
+
+  .about {
+    text-align: center;
+    padding: 40px 20px;
+    width: 92%;
+  }
+
+  .about-text {
+    max-width: 95%;
+    margin: 0 auto 20px;
+  }
+
+  .edu .card {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 540px) {
+
+  .about {
+    padding: 32px 17px;
+    width: 85%;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .subCard h4 {
+    font-size: 16px;
+  }
+
+  .card h5 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+
+  .about {
+    padding: 30px 15px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .card {
+    padding: 18px 15px;
+  }
+
+  .subCard h4 {
+    font-size: 15px;
+  }
+
+  .card h5 {
+    font-size: 13px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+
+}
+
+.homeLeft > * {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.homeLeft p:first-child {
+  animation-delay: 0.1s;
+}
+
+.homeName {
+  animation-delay: 0.3s;
+}
+
+.homeLeft h2 {
+  animation-delay: 0.5s;
+}
+
+.homeLeft p:nth-of-type(2) {
+  animation-delay: 0.7s;
+}
+
+.home-buttons {
+  animation-delay: 0.9s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,159 @@
+
+
+.skills {
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 60px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+
+.skills-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: "Numans", sans-serif;
+  color: #1F2937;
+  position: relative;
+}
+
+
+
+.skills-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+
+.skill-card {
+  background: #FDEDEE;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(214, 51, 132, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+
+.skills-sub {
+    text-align: left;
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #D63384;
+  font-weight: 600;
+  position: relative;
+}
+
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+.skill-badge {
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid #D63384;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #1F2937;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+
+
+@media (max-width: 1000px) {
+  .skills {
+    padding: 50px 30px;
+  }
+
+  .skills-title {
+    font-size: 36px;
+  }
+
+  .skills-sub {
+    font-size: 18px;
+  }
+
+  .skill-badge {
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 853px) {
+  .skills {
+    padding: 40px 20px;
+    width: 92%;
+    text-align: center;
+  }
+
+  .skills-group {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    text-align: left;
+  }
+}
+
+
+
+
+@media (max-width: 540px) {
+  .skills {
+    padding: 32px 17px;
+    width: 85%;
+  }
+
+  .skills-title {
+    font-size: 30px;
+  }
+
+  .skills-sub {
+    font-size: 16px;
+  }
+
+  .skill-badge {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .skills {
+    padding: 30px 15px;
+  }
+
+  .skills-title {
+    font-size: 26px;
+  }
+
+  .skills-sub {
+    font-size: 15px;
+  }
+
+  .skill-card {
+    padding: 18px 15px;
+  }
+
+  .skill-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
